@@ -12,7 +12,7 @@ function TotalExpense({ expenses }) {
   return (
     <div className="display_total">
       <div>
-        <h3>Expense</h3>
+        <h3>Expense Total</h3>
       </div>
       <div className="bar"></div>
       <div>
