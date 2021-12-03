@@ -1,171 +1,38 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(252, 245, 255);
-  height: 100vh;
-  box-sizing: border-box;
-  user-select: none; /* supported by Chrome and Opera */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
 .App {
-  width: 500px;
-  height: 800px;
-  padding: 20px;
-}
-
-.App .App_header {
   text-align: center;
-  font-size: 40px;
-  margin: 20px;
 }
 
-.App .App_header_b {
-  margin: 20px;
-  margin-left: 0;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.display_total {
-  display: grid;
-  grid-template-columns: 49.5% 1% 49.5%;
-  background-color: #fff;
-  box-shadow: 2px 2px 10px rgb(214, 214, 214);
-  text-align: center;
-  padding: 30px 0;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-.display_total .bar {
-  background-color: rgb(200, 200, 200);
-  width: 1px;
-}
-
-.display_total p {
-  margin-top: 22px;
-  color: red;
-}
-
-.display_total h3 {
-  margin-top: 22px;
-}
-
-/* .expense_list_container {
-} */
-
-.expense_list {
-  background-color: #fff;
-  border-right: 5px solid red;
-  box-shadow: 2px 2px 10px rgb(218, 218, 218);
-  padding-left: 10px;
-  height: 50px;
-  overflow: hidden;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  color: rgb(65, 65, 65);
-  line-height: 3rem;
-  display: grid;
-  grid-template-columns: 60% 40%;
-}
-
-.expense_list .side_container {
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.expense_list .amount {
-  margin-right: 30px;
-  color: red;
+.App-link {
+  color: #61dafb;
 }
 
-.expense_list .side {
-  width: 0px;
-  overflow: hidden;
-  background-color: rgb(255, 0, 0);
-  position: absolute;
-  color: #fff;
-  text-align: center;
-  overflow: hidden;
-  height: 50px;
-  transition: 0.3s ease-out;
-}
-
-.expense_list .side_container:hover .side {
-  width: 200px;
-}
-
-.expense_list .side button {
-  background-color: transparent;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  font-size: 15px;
-  transition: 0.4s ease-in;
-}
-
-.expense_list .side button:hover {
-  color: rgb(0, 0, 0);
-}
-
-.expense_list .side .button {
-  margin-left: 5px;
-}
-
-.form_container {
-  width: 100%;
-}
-
-input {
-  padding: 0;
-  border-radius: none;
-  height: 50px;
-  width: 100%;
-  padding-left: 10px;
-  outline: none;
-}
-
-form select {
-  width: 100%;
-  height: 50px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 0;
-  border: 1px solid gray;
-  background-color: #fff;
-  padding-left: 10px;
-}
-
-form button {
-  width: 100%;
-  height: 50px;
-  margin-top: 20px;
-  border-radius: 0;
-  border: none;
-  background-color: #9c88ff;
-  color: #fff;
-  font-size: 20px;
-  cursor: pointer;
-  transition: 0.3s ease-in;
-}
-
-button:hover {
-  background-color: #8e7bee;
-}
-
-.update_form_container {
-  height: 100%;
-  width: 100%;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
